@@ -1,12 +1,24 @@
 const webpack = require('webpack');
-const path = require('path');
-const pkg = require('./package.json');
+const path    = require('path');
+const glob    = require("glob")
+const pkg     = require('./package.json');
+
+var scripts = [];
+var js =[];
+var jsx =[];
+
+js = glob.sync(`./src/js/**/*.js`).map(file => {
+    return file;
+});
+
+jsx = glob.sync(`./src/js/**/*.jsx`).map(file => {
+    return file;
+});
+
+scripts = js.concat(jsx);
 
 module.exports = {
-    entry: [
-        './src/js/app.js',
-        './src/js/components/Main.jsx'
-    ],
+    entry: scripts,
     output: {
         path: path.resolve(__dirname, "dist"),
         publicPath: '/assets/',
