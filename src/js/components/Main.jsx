@@ -28,7 +28,7 @@ class Main extends React.Component {
 
     renderCell(cell, i) {
         return (
-            <td key={i}>
+            <td key={i} className="col-md-1">
                 <i className={`fa fa-3x fa-${cell.icon}`} />
                 {cell.key}
             </td>

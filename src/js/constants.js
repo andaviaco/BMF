@@ -2,7 +2,7 @@
 export const GROUNDS_DATA = {
     mountain: {
         key: 1,
-        icon: 'tint',
+        icon: 'area-chart',
     },
     water: {
         key: 2,
@@ -10,15 +10,15 @@ export const GROUNDS_DATA = {
     },
     canyon: {
         key: 3,
-        icon: 'tint',
+        icon: 'chevron-down',
     },
     plane: {
         key: 4,
-        icon: 'tint',
+        icon: '',
     },
     wall: {
         key: 5,
-        icon: 'tint',
+        icon: 'th',
     },
     home: {
         key: 6,
